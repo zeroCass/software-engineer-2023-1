@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(73, 73, 200);
+}
+
+.header nav {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.header nav a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}

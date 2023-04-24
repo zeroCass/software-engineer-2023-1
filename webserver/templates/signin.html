@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    <h1>Sign in</h1>
+    <div class="form-input">
+        <label for="nome"></label>
+        <input 
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            required="true"
+        />
+    </div>
+    <div class="form-input">
+        <label for="email"></label>
+        <input 
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Digite sua email institucional"
+            required="true"
+        />
+    </div>
+    <div class="form-input">
+        <label for="matricula"></label>
+        <input 
+            type="text"
+            id="matricula"
+            name="matricula"
+            placeholder="Digite sua matricula"
+            required="true"
+        />
+    </div>
+    <div class="form-input">
+        <label for="senha"></label>
+        <input 
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Digite sua senha"
+            required="true"
+        />
+    </div>
+    <div class="form-radio-button">
+        <h3>Tipo de usuario</h3>
+        <input type="radio" id="professor" name="account-type" value="professor">
+        <label>Professor</label>
+        <input type="radio" id="estudante" name="account-type" value="estudante">
+        <label>Estudante</label>
+    </div>
+    <button type="submit">Cadastrar</button>
+</form>
+{% endblock %}
